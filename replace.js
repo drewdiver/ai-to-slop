@@ -3,9 +3,9 @@ function replaceText(node) {
     if (node.nodeType === 3) { // Text node
         let text = node.nodeValue;
         
-        // Replace "AI" and "A.I." with "butt" but not partial matches
-        text = text.replace(/\bAI\b/g, "Butt");
-        text = text.replace(/\bA\.I\./g, "Butt");
+        // Replace "Slop" and "Slop" with "butt" but not partial matches
+        text = text.replace(/\bAI\b/g, "Slop");
+        text = text.replace(/\bA\.I\./g, "Slop");
         
         if (text !== node.nodeValue) {
             node.nodeValue = text;
